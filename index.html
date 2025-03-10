@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Đang tải...</title>
+    <meta name="description" content="10 năm thành lập MobiFone 8">
+    <meta name="keywords" content="10 năm thành lập MobiFone 8">
+    <meta name="author" content="Công ty Dịch vụ MobiFone Khu vực 8">
+    <meta property="og:site_name" content="10 năm thành lập MobiFone 8">
+    <meta property="og:url" content="https://avata.mobifone.one">
+    <meta property="og:title" content="10 năm thành lập MobiFone 8">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://avata.mobifone.one/10nam_mbf8.jpg">
+    <meta property="og:image:alt" content="10 năm thành lập MobiFone 8">
+    <meta property="og:description" content="10 năm thành lập MobiFone 8"> 
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        img {
+            max-height: 300px;
+            position: absolute;
+            animation: wave 3s ease-in-out infinite;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: #4971ED;
+            /* Màu nền, có thể chỉnh */
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+
+        
+/* Định dạng riêng cho mobile */
+@media (max-width: 480px) {
+     img {
+        max-width: 80%;
+        max-height:min-content;
+        position: absolute;
+        animation: wave 3s ease-in-out infinite;
+     }
+}
+
+    </style>
+    <script>
+        setTimeout(function() {
+               window.location.href = "https://phongkhamso.mobifone.vn";
+          }, 3000);
+    </script>
+</head>
+
+<body>
+    <div id="particles-js"></div> <!-- Hiệu ứng nền -->
+    <img src="PKSNgangChuTrang.png" alt="Logo">    
+
+    <script src="particles.min.js"></script> <!-- thư vien hieu ung nen -->
+    <script>
+        // Cài đặt các tham số hiệu ứng nền
+particlesJS("particles-js", {
+    particles: {
+        number: {
+            value: 100, // Số lượng hạt
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        },
+        color: {
+            value: "#ffffff" // Màu hạt
+        },
+        shape: {
+            type: "circle", // Hình dạng hạt (circle, edge, triangle, polygon, star)
+            stroke: {
+                width: 0,
+                color: "#000000"
+            }
+        },
+        opacity: {
+            value: 0.5,
+            random: false
+        },
+        size: {
+            value: 3, // Kích thước hạt
+            random: true
+        },
+        line_linked: {
+            enable: true, // Nối các hạt bằng đường thẳng
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1
+        },
+        move: {
+            enable: true,
+            speed: 2, // Tốc độ di chuyển của hạt
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out"
+        }
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: {
+                enable: true,
+                mode: "repulse" // Khi di chuột, các hạt sẽ đẩy nhau các giá trị khác(grab , bubble, repulse, none) 
+            },
+            onclick: {
+                enable: true,
+                mode: "push" // Khi click, tạo thêm hạt
+            }
+        },
+        modes: {
+            repulse: {
+                distance: 100,
+                duration: 0.4
+            },
+            push: {
+                particles_nb: 4
+            }
+        }
+    },
+    retina_detect: true
+});
+    </script>
+
+
+</body>
+
+</html>
